@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>jQuery Character Limit - Tests</title>
+        <script type="text/javascript" src="jquery-character-limit-0.1.js" ></script>
+        
+        <style type="text/css">
+            textarea {
+                width:200px;
+                height:100px;
+                margin:0 0 20px 0;
+            }
+            
+            div {
+                vertical-align:top;
+            }
+
+        </style>
+        
+        <script type="text/javascript">
+            $(function () {
+                $("textarea").characterLimit();
+                $("#custom").characterLimit({
+                    "maxCharacters":20
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+        <div>Default (use to paste from): <textarea></textarea></div>
+        <div>Custom (bound by plugin): <textarea id="custom"></textarea></div>
+    </body>
+</html>
