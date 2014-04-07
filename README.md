@@ -22,6 +22,7 @@ To restrict a textarea to a maximum of 100 characters you can use the default se
 </html>
 ```
 ```javascript
+//main.js
 $(function() {
     $("#restrict").characterLimit();
 }
@@ -29,6 +30,7 @@ $(function() {
 
 To customise the maximum characters allowed you can override the default settings as follows
 ```javascript
+//main.js
 $(function() {
     $("#restrict").characterLimit({
         "maxCharacters":20
