@@ -13,7 +13,7 @@
     $.fn.characterLimit = function (options) {
 
         var settings = $.extend({
-            'maxCharacters': 100
+            maxCharacters: 100
         }, options);
 
         return this.each(function () {
